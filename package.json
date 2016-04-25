@@ -1,0 +1,26 @@
+{
+    "name": "eco",
+    "displayName": "Eco: Embedded CoffeeScript templates",
+    "description": "Syntax highlighting support for eco templates.",
+    "version": "0.0.1",
+    "publisher": "slb235",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "eco",
+            "aliases": ["HTML (ECO)", "eco"],
+            "extensions": [".eco",".jst.eco"],
+            "configuration": "./eco.configuration.json"
+        }],
+        "grammars": [{
+            "language": "eco",
+            "scopeName": "text.html.eco",
+            "path": "./syntaxes/eco.tmLanguage"
+        }]
+    }
+}
